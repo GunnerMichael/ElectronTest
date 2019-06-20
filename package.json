@@ -1,0 +1,22 @@
+{
+  "name": "commissionuser",
+  "version": "1.0.0",
+  "description": "setup users for the commission system",
+  "main": "index.js",
+  "dependencies": {
+    "npm": "^6.9.0",
+    "popper": "^1.0.1"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "electron": "^5.0.3",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.14.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Michael Butler",
+  "license": "ISC"
+}

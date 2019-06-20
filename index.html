@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script>let $ = require('jquery');</script>
+<script>require('popper.js');</script>
+<script>require('bootstrap');</script>
+
+<style type="text/css">
+    body {
+        margin: 12px;
+        padding: 0;
+        min-width: 100% !important;
+        
+    }    
+    button
+    {
+        margin:4px;
+    }
+</style>
+<script>
+        function DoActionButton() {
+            alert('hello ' + $("#exampleInput").val())
+        }
+</script>
+
+  </head>
+  <body>
+      <h1>New Commission User Setup</h1>
+      <div class="container-fluid">
+            <nav class="row">
+              <div class="col-xs-12">
+                <h2>Main Navigation</h2>
+          
+                <div class="row">
+                  <div class="col-xs-6">
+                    <ul data-menuTitle="Main Menu">
+                      <li><a accesskey="a" href="#">Ride Bike</a></li>
+                    </ul>    
+          
+                  </div>
+                </div>
+            </nav>                    
+            <div class="col-xs-6">
+                <form >
+                        <div class="form-group row">
+                            <label for="exampleInput" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-6">
+                                <input type="name" class="form-control" id="exampleInput" placeholder="Enter name of user">
+                             </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="telLogin" class="col-sm-2 col-form-label">Telephone Login</label>
+                            <div class="col-sm-6">
+                                <input type="name" class="form-control" id="telLogin" placeholder="Enter telephone login">
+                             </div>
+                        </div>
+                        <div class="form-group row">
+                                <label for="systemLogon" class="col-sm-2 col-form-label">System Login</label>
+                                <div class="col-sm-6">
+                                    <input type="name" class="form-control" id="systemLogon" placeholder="Enter System Logon">
+                                 </div>
+                            </div>
+                        
+                        <div class="form-group row">
+                        <button type="button" class="btn btn-primary" onclick="DoActionButton()">Action</button>
+                          </div> 
+                          </form>
+                    
+        </div>
+    </div>
+    </body>
+</html>
